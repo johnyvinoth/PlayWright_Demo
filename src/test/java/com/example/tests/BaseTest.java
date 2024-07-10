@@ -1,18 +1,22 @@
 package com.example.tests;
 
+import com.example.utils.PropertyReader;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseTest {
     protected Playwright playwright;
     protected Page page;
     protected Browser browser;
+    PropertyReader propertyReader;
 
     @BeforeClass
+    @Parameters("browserName")
     public void setup(String browserName) {
         playwright = Playwright.create();
 
@@ -31,6 +35,7 @@ public class BaseTest {
 
 
     }
+
     @AfterClass
     public void teardown() {
         page.close();
