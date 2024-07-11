@@ -1,23 +1,19 @@
 package com.example.tests;
 
 import com.example.pages.LoginPage;
+import com.example.pages.MainPage;
 import com.example.utils.PropertyReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
-    @Test
+    @Test(enabled = true)
     public void loginWithValidCredentials() throws Exception {
-        propertyReader = new PropertyReader();
+        MainPage mainPage = navigateToURLWithCredentials(true);
+    }
 
-        String URL=propertyReader.getProperty("url");
-        String username=propertyReader.getProperty("username");
-        String password=propertyReader.getProperty("password");
-
-        page.navigate(URL);
-        LoginPage loginPage = new LoginPage(page);
-        loginPage.login(username,password);
-        Assert.assertTrue(loginPage.isLoggedIn());
-
+    @Test(enabled = true)
+    public void loginWithInvalidCredentials() throws Exception {
+        MainPage mainPage = navigateToURLWithCredentials(false);
     }
 }
