@@ -19,10 +19,11 @@ public class BaseTest {
     PropertyReader propertyReader;
 
     @BeforeClass
-    @Parameters("browserName")
-    public void setup(String browserName) {
+//    @Parameters("browserName")
+    public void setup() {
         playwright = Playwright.create();
-
+        String browserName = System.getProperty("browserName", "chrome");
+        System.out.println("Browser Name: " + browserName);
         switch (browserName.toLowerCase()) {
             case "chrome":
                 browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));

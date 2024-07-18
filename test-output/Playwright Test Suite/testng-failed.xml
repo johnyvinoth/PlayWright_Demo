@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Playwright Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test on Chrome(failed)">
+    <classes>
+      <class name="com.example.tests.TrasactProductsTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="addProductsAndVerifyCart"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.example.tests.TrasactProductsTest -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Playwright Test Suite] -->

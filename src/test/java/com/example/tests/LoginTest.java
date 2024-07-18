@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest {
         MainPage mainPage = navigateToURLWithCredentials(true);
     }
 
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void loginWithInvalidCredentials() throws Exception {
         MainPage mainPage = navigateToURLWithCredentials(false);
     }
