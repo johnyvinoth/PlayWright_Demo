@@ -98,7 +98,6 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <!--                <outputDirectory>${basedir}/target/classes</outputDirectory>-->
                             <outputDirectory>${project.build.directory}/classes</outputDirectory>
                             <resources>
                                 <resource>
@@ -123,56 +122,8 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <!--                    <includes>-->
-                    <!--                        <include>**/*Test.java</include>-->
-                    <!--                    </includes>-->
                 </configuration>
             </plugin>
-            <!--                        <plugin>-->
-            <!--                            <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                            <artifactId>maven-jar-plugin</artifactId>-->
-            <!--                            <version>3.4.2</version>-->
-            <!--                            <configuration>-->
-            <!--                                <archive>-->
-            <!--                                    <manifest>-->
-            <!--                                        <addClasspath>true</addClasspath>-->
-            <!--                                        <classpathPrefix>lib/</classpathPrefix>-->
-            <!--                                        <mainClass>com.example.tests.MainRunner</mainClass>-->
-            <!--                                    </manifest>-->
-            <!--                                </archive>-->
-            <!--                            </configuration>-->
-            <!--                        </plugin>-->
-
-            <!--            Shade plugin-->
-            <!--            <plugin>-->
-            <!--                <groupId>org.apache.maven.plugins</groupId>-->
-            <!--                <artifactId>maven-shade-plugin</artifactId>-->
-            <!--                <version>3.6.0</version>-->
-            <!--                <executions>-->
-            <!--                    <execution>-->
-            <!--                        <phase>package</phase>-->
-            <!--                        <goals>-->
-            <!--                            <goal>shade</goal>-->
-            <!--                        </goals>-->
-            <!--                        <configuration>-->
-            <!--                            <createDependencyReducedPom>false</createDependencyReducedPom>-->
-            <!--                            <outputFile>target/PlayWright_Demo-1.0-SNAPSHOT-shaded.jar</outputFile>-->
-            <!--                            <artifactSet>-->
-            <!--                                <includes>-->
-            <!--                                    <include>com.microsoft.playwright:*</include>-->
-            <!--                                    <include>org.testng:testng</include>-->
-            <!--                                    <include>com.beust:jcommander</include>-->
-            <!--                                    <include>org.slf4j:slf4j-api</include>-->
-            <!--                                    <include>org.slf4j:slf4j-simple</include>-->
-            <!--                                    <include>com.example.tests.*</include>-->
-            <!--                                </includes>-->
-            <!--                            </artifactSet>-->
-            <!--                        </configuration>-->
-
-            <!--                    </execution>-->
-            <!--                </executions>-->
-            <!--            </plugin>-->
-
 
         </plugins>
     </build>

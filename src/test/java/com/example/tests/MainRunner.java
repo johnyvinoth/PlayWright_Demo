@@ -17,9 +17,7 @@ public class MainRunner {
 
     public static void main(String[] args) throws IOException {
         testng = new TestNG();
-//        String path = System.getProperty("user.dir") + "/src/test/resources/testng.xml";
-        String testngXmlPathh = getTestNgPath();
-        String testngXmlPath="/testng.xml";
+        String testngXmlPath = "/testng.xml";
         System.out.println("TestNG XML path: " + testngXmlPath);
 
 
@@ -39,15 +37,9 @@ public class MainRunner {
                 }
             }
             tempFile.deleteOnExit();
-
-//      classpath  File testngXmlFile = new File(testngXmlPath);
-//        if (!testngXmlFile.exists()) {
-//            throw new RuntimeException("Cannot find " + testngXmlPath);
-//        }
             System.out.println("TestNG XML path: " + testngXmlPath);
 
             List<String> testngXmlList = new ArrayList<>();
-//        testngXmlList.add(testngXmlPath);
             testngXmlList.add(tempFile.getAbsolutePath());  // Using temp file instead of setting test classes directly
 
             testng.setTestSuites(testngXmlList);  // Using XML file instead of setting test classes directly
@@ -70,10 +62,8 @@ public class MainRunner {
         String testngXMLPath;
         URL testngUrl = MainRunner.class.getResource("/testng.xml");
         if (testngUrl != null) {
-//            System.out.println(testngUrl);
             testngXMLPath = URLDecoder.decode(testngUrl.getFile(), StandardCharsets.UTF_8);
         } else {
-//            testngXMLPath = "/src/test/resources/testng.xml"; // For IDE or Maven
             testngXMLPath = System.getProperty("user.dir") + "/src/test/resources/testng.xml";
         }
         return testngXMLPath;

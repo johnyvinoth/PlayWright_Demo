@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-22T14:52:56 IST" name="Playwright Test Suite123" finished-at="2024-07-22T14:53:08 IST" duration-ms="11937">
+  <suite started-at="2024-07-22T15:20:53 IST" name="Playwright Test Suite123" finished-at="2024-07-22T15:21:13 IST" duration-ms="20722">
     <groups>
     </groups>
-    <test started-at="2024-07-22T14:52:56 IST" name="Test on Chrome" finished-at="2024-07-22T14:53:08 IST" duration-ms="11937">
+    <test started-at="2024-07-22T15:20:53 IST" name="Test on Chrome" finished-at="2024-07-22T15:21:13 IST" duration-ms="20722">
       <class name="com.example.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:52:56 IST" name="setup" finished-at="2024-07-22T14:52:59 IST" duration-ms="2580" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T15:20:53 IST" name="setup" finished-at="2024-07-22T15:20:55 IST" duration-ms="2219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:52:59 IST" name="loginWithValidCredentials" finished-at="2024-07-22T14:53:08 IST" duration-ms="9077" status="PASS">
+        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T15:20:55 IST" name="loginWithInvalidCredentials" finished-at="2024-07-22T15:20:59 IST" duration-ms="4680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T15:20:59 IST" name="loginWithValidCredentials" finished-at="2024-07-22T15:21:04 IST" duration-ms="4323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:53:08 IST" name="teardown" finished-at="2024-07-22T14:53:08 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T15:21:04 IST" name="teardown" finished-at="2024-07-22T15:21:04 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.example.tests.LoginTest -->
+      <class name="com.example.tests.TrasactProductsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.TrasactProductsTest@33cb5951]" started-at="2024-07-22T15:21:04 IST" name="setup" finished-at="2024-07-22T15:21:05 IST" duration-ms="968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addProductsAndVerifyCart()[pri:0, instance:com.example.tests.TrasactProductsTest@33cb5951]" started-at="2024-07-22T15:21:05 IST" name="addProductsAndVerifyCart" finished-at="2024-07-22T15:21:13 IST" duration-ms="7925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductsAndVerifyCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.TrasactProductsTest@33cb5951]" started-at="2024-07-22T15:21:13 IST" name="teardown" finished-at="2024-07-22T15:21:13 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.tests.TrasactProductsTest -->
     </test> <!-- Test on Chrome -->
   </suite> <!-- Playwright Test Suite123 -->
 </testng-results>
