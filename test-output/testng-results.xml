@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+  <suite started-at="2024-07-22T14:52:56 IST" name="Playwright Test Suite123" finished-at="2024-07-22T14:53:08 IST" duration-ms="11937">
+    <groups>
+    </groups>
+    <test started-at="2024-07-22T14:52:56 IST" name="Test on Chrome" finished-at="2024-07-22T14:53:08 IST" duration-ms="11937">
+      <class name="com.example.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:52:56 IST" name="setup" finished-at="2024-07-22T14:52:59 IST" duration-ms="2580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:52:59 IST" name="loginWithValidCredentials" finished-at="2024-07-22T14:53:08 IST" duration-ms="9077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.tests.LoginTest@2d127a61]" started-at="2024-07-22T14:53:08 IST" name="teardown" finished-at="2024-07-22T14:53:08 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.tests.LoginTest -->
+    </test> <!-- Test on Chrome -->
+  </suite> <!-- Playwright Test Suite123 -->
 </testng-results>

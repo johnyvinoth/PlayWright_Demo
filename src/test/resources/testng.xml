@@ -4,7 +4,7 @@
 <!--        <parameter name="browserName" value="chrome" />-->
         <classes>
             <class name="com.example.tests.LoginTest" />
-<!--             <class name="com.example.tests.TrasactProductsTest" />-->
+             <class name="com.example.tests.TrasactProductsTest" />
         </classes>
     </test>
     <test name="Test on Firefox" enabled="false">
