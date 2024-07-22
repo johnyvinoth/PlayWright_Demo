@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Playwright Test Suite">
+<suite name="Playwright Test Suite123">
     <test name="Test on Chrome" enabled="true">
-        <parameter name="browserName" value="chrome" />
+<!--        <parameter name="browserName" value="chrome" />-->
         <classes>
             <class name="com.example.tests.LoginTest" />
              <class name="com.example.tests.TrasactProductsTest" />
         </classes>
     </test>
     <test name="Test on Firefox" enabled="false">
-        <parameter name="browserName" value="firefox" />
+<!--        <parameter name="browserName" value="firefox" />-->
         <classes>
             <class name="com.example.tests.LoginTest" />
             <class name="com.example.tests.TrasactProductsTest" />
