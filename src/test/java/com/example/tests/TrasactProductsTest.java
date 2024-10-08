@@ -17,5 +17,7 @@ public class TrasactProductsTest extends BaseTest {
         Assert.assertTrue(shoppingCartPage.isCartPageDisplayed(), "Shopping Cart page is not displayed");
         Assert.assertTrue(shoppingCartPage.isProductInCart("Sauce Labs Backpack"), "Product not found in the cart");
         Assert.assertTrue(shoppingCartPage.isProductInCart("Sauce Labs Bike Light"), "Product not found in the cart");
+//      Added the following to test the video generation for failed cases.
+        Assert.assertTrue(false);
     }
 }

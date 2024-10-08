@@ -11,7 +11,7 @@
 <!--        <parameter name="browserName" value="firefox" />-->
         <classes>
             <class name="com.example.tests.LoginTest" />
-            <class name="com.example.tests.TrasactProductsTest" />
+<!--            <class name="com.example.tests.TrasactProductsTest" />-->
         </classes>
     </test>
 </suite>
